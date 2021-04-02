@@ -1,34 +1,344 @@
-<head>
-  <link rel="stylesheet" href = css/index.css>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Benjamin Ainley" />
+    <meta name="description" content="Benjamin Ainley CV" />
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
-<body>
-  <header>
-    <nav>
-      <ul class="navbar">
-        <li class="link"><a href="index.html">Home</a></li>
-        <li class="link"><a href="resume.html">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
-  <h1>Hi, I'm Benjamin Ainley</h1>
-  <ul class="info">
-    <li>
-      I'm a 2nd year at the University of Virginia School of Engineering and
-      Applied Sciences
-    </li>
-    <li>Pursuing a Bachelor's of Science in Computer Science</li>
-    <li>Love playing tennis and skiing</li>
-  </ul>
+    <link rel="stylesheet" href = css/index.css>
+  </head>
 
-  <p>
-    <em>(hint: you'll need to update the CSS link href as well)</em>
-  </p>
-  <section>
-    <div>a</div>
-    <div>b</div>
-    <div>c</div>
-  </section>
-</body>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        Benjamin Ainley
 
-<footer>footer</footer>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience"> Experience </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"> Projects </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                data-toggle="dropdown"
+                >Contact</a
+              >
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/benainley01"
+                  >Github</a
+                >
+                <a
+                  class="dropdown-item"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mailto: bsa2up@virginia.edu"
+                  >Email</a
+                >
+                <a
+                  class="dropdown-item"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/benjamin-ainley-b019761b1/"
+                  >LinkedIn</a
+                >
+                <a class="dropdown-item" href="tel:401-527-9667">Phone</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page starts here -->
+      <div
+        class="container-fluid"
+        id="aboutdiv"
+        style="
+          background-image: url(images/sunrise_fog.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+        "
+      >
+        <section class="resume-section" id="about">
+          <h2 class="mb-4" id="about">About Me</h2>
+          <div class="subheading mb-4">
+            University of Viginia · Charlottesville, VA · Cranston, RI
+          </div>
+          <div id="about_text">
+            <p>
+              Hi, my name is Benjamin Ainley, and I am a second year
+              undergraduate student at the University of Virginia School of
+              Engineering and Applied Sciences
+            </p>
+            <p>
+              I am currently studying computer science but outside of class I
+              love playing tennis, skiing, and traveling
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Education -->
+    <div class="container-fluid">
+      <section class="resume-section" id="education">
+        <h2 class="mb-4">Education</h2>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div class="flex-grow-1">
+            <h4 class="mb-0">University of Virginia</h4>
+            <div class="subheading mb-3">
+              Major: Bachelor of Science, Computer Science
+            </div>
+            <p>Cumulative GPA: 3.98, Major GPA: 3.95</p>
+            <p>
+              Relevant Coursework: Program and Data Representation, Advanced
+              Software Development, Software Development Methods Algorithms,
+              Probability, Theory of Computation.
+            </p>
+            <p>Activities: Club Tennis Travel Team</p>
+          </div>
+          <div class="flex-shrink-0">August 2019 - May 2023</div>
+        </div>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div class="flex-grow-1">
+            <h4 class="mb-0">Cranston High School West</h4>
+            <div class="subheading mb-3"></div>
+            <p>GPA: 4.8</p>
+            <p>
+              Honors: Highest Honors, Tennis Team Captain, History Award,
+              Science Award, Student Athlete Award <br />
+              Activities: Varsity Tennis Team, National Honor Society
+            </p>
+          </div>
+          <div class="flex-shrink-0">August 2015 - June 2019</div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-fluid">
+      <section class="resume-section" id="experience">
+        <h2 class="mb-4">Experience</h2>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div class="flex-grow-1">
+            <h4 class="mb-0">Tennis Instructor</h4>
+            <div class="subheading mb-3">Rally Point Racquet Club</div>
+            <p>
+              Worked with groups of students ranging from elementray school to
+              high school. Instructed groups of varying sizes and taught private
+              lessons.
+            </p>
+          </div>
+          <div class="flex-shrink-0">November 2019 - January 2021</div>
+        </div>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div class="flex-grow-1">
+            <h4 class="mb-0">Tennis Instructor</h4>
+            <div class="subheading mb-3">
+              Cranston Parks adn Recreation Center
+            </div>
+            <p>
+              Volunteered at the tennis summer camp in 2015. Then worked at the
+              camp in 2016.
+            </p>
+          </div>
+          <div class="flex-shrink-0">June 2015 - June 2019</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Projects -->
+    <div class="container-fluid">
+      <section class="resume-section" id="projects">
+        <h2 class="mb-4">Projects</h2>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div class="flex-grow-1">
+            <h4 class="mb-0">Huffman Encoder and Decoder</h4>
+            <p>
+              Read in a txt file and created prefix codes based on frequency of
+              characters for lossless data compression. Then decompressed that
+              encoded file to translate prefix codes.
+            </p>
+          </div>
+          <div class="flex-shrink-0">November 2020</div>
+        </div>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div class="flex-grow-1">
+            <h4 class="mb-0">Coronavirus Information Live Tracker</h4>
+            <p>
+              Created a website using ReactJS and HTML/CSS to display
+              coronavirus statistics of the searched country. Data updated every
+              10 minutes from Johns Hopkins CSSE. Used Heroku for cloud hosting.
+            </p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://ben-corona-info.herokuapp.com/"
+              >COVID-19 Analysis Website</a
+            >
+          </div>
+          <div class="flex-shrink-0">April 2020</div>
+        </div>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mb-5"
+        >
+          <div class="flex-grow-1">
+            <h4 class="mb-0">Intro CS Final Project</h4>
+            <p>Designed a game similar to Frogger using Pygame.</p>
+          </div>
+          <div class="flex-shrink-0">November 2019</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Photo Dump -->
+    <div class="resume-section">
+      <h2>Some photos over the past few years</h2>
+    </div>
+    <section class="resume-section" id="photos">
+      <div class="photos">
+        <figure>
+          <img src="images/lean_on_tree.jpeg" />
+          <figcaption><a href="#">1</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/monument.jpg" />
+          <figcaption><a href="#">2</a></figcaption>
+        </figure>
+        <figure class="landscape">
+          <img src="images/me_and_chi.jpeg" />
+          <figcaption><a href="#">3</a></figcaption>
+        </figure>
+        <figure class="landscape">
+          <img src="images/paris.jpg" />
+          <figcaption><a href="#">4</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/pisa.jpg" />
+          <figcaption><a href="#">5</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/shaking_hands.jpg" />
+          <figcaption><a href="#">6</a></figcaption>
+        </figure>
+        <figure class="landscape">
+          <img src="images/ski.jpg" />
+          <figcaption><a href="#">7</a></figcaption>
+        </figure>
+        <figure class="landscape">
+          <img src="images/fog1.jpg" />
+          <figcaption><a href="#">8</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/tennis_2.png" />
+          <figcaption><a href="#">9</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/beach.jpg" />
+          <figcaption><a href="#">10</a></figcaption>
+        </figure>
+        <figure>
+          <img src="images/pisa2.jpeg" style="max-width: 200%" ; />
+          <figcaption><a href="#">11</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- <div class="resume-content">
+      <h2 class="mb-5">Photos</h2>
+      <div class="grid">
+        <div class="grid-sizer">
+          <div class="grid-item">
+            <img src="images/lean_on_tree.jpeg" />
+          </div>
+          <div class="grid-item">
+            <img src="images/me_and_chi.jpeg" />
+          </div>
+          <div class="grid-item">
+            <img src="images/monument.jpg" />
+          </div>
+          <div class="grid-item">
+            <img src="images/paris.jpg" />
+          </div>
+          <div class="grid-item">
+            <img src="images/pisa.jpg" />
+          </div>
+          <div class="grid-item">
+            <img src="images/shaking_hands.jpg" />
+          </div>
+          <div class="grid-item">
+            <img src="images/ski.jpg" />
+          </div>
+          <div class="grid-item">
+            <img src="images/tennis.PNG" />
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Masonry for image collage -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
