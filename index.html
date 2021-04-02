@@ -36,13 +36,15 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#about">Home</a>
+              <a class="nav-link js-scroll-trigger" href="#about">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experience"> Experience </a>
+              <a class="nav-link js-scroll-trigger" href="#experience">
+                Experience
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects"> Projects </a>
@@ -79,6 +81,9 @@
                 >
                 <a class="dropdown-item" href="tel:401-527-9667">Phone</a>
               </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#photos"> Memories </a>
             </li>
           </ul>
         </div>
@@ -238,89 +243,46 @@
     </div>
 
     <!-- Photo Dump -->
-    <div class="resume-section">
+    <div class="resume-section" id="photos">
       <h2>Some photos over the past few years</h2>
     </div>
-    <section class="resume-section" id="photos">
+    <section class="resume-section">
       <div class="photos">
         <figure>
           <img src="images/lean_on_tree.jpeg" />
-          <figcaption><a href="#">1</a></figcaption>
         </figure>
         <figure>
           <img src="images/monument.jpg" />
-          <figcaption><a href="#">2</a></figcaption>
         </figure>
         <figure class="landscape">
           <img src="images/me_and_chi.jpeg" />
-          <figcaption><a href="#">3</a></figcaption>
         </figure>
         <figure class="landscape">
           <img src="images/paris.jpg" />
-          <figcaption><a href="#">4</a></figcaption>
         </figure>
         <figure>
           <img src="images/pisa.jpg" />
-          <figcaption><a href="#">5</a></figcaption>
         </figure>
         <figure>
           <img src="images/shaking_hands.jpg" />
-          <figcaption><a href="#">6</a></figcaption>
         </figure>
         <figure class="landscape">
           <img src="images/ski.jpg" />
-          <figcaption><a href="#">7</a></figcaption>
         </figure>
         <figure class="landscape">
           <img src="images/fog1.jpg" />
-          <figcaption><a href="#">8</a></figcaption>
         </figure>
         <figure>
           <img src="images/tennis_2.png" />
-          <figcaption><a href="#">9</a></figcaption>
         </figure>
         <figure>
           <img src="images/beach.jpg" />
-          <figcaption><a href="#">10</a></figcaption>
         </figure>
         <figure>
           <img src="images/pisa2.jpeg" style="max-width: 200%" ; />
-          <figcaption><a href="#">11</a></figcaption>
         </figure>
       </div>
     </section>
-
-    <!-- <div class="resume-content">
-      <h2 class="mb-5">Photos</h2>
-      <div class="grid">
-        <div class="grid-sizer">
-          <div class="grid-item">
-            <img src="images/lean_on_tree.jpeg" />
-          </div>
-          <div class="grid-item">
-            <img src="images/me_and_chi.jpeg" />
-          </div>
-          <div class="grid-item">
-            <img src="images/monument.jpg" />
-          </div>
-          <div class="grid-item">
-            <img src="images/paris.jpg" />
-          </div>
-          <div class="grid-item">
-            <img src="images/pisa.jpg" />
-          </div>
-          <div class="grid-item">
-            <img src="images/shaking_hands.jpg" />
-          </div>
-          <div class="grid-item">
-            <img src="images/ski.jpg" />
-          </div>
-          <div class="grid-item">
-            <img src="images/tennis.PNG" />
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- Masonry for image collage -->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
@@ -340,5 +302,34 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              600,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
   </body>
 </html>
